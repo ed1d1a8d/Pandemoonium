@@ -205,7 +205,7 @@ void play_game()
 
 		for (i = 0, a = agents; i < NUMAGENTS; ++a, ++i)
 			if (a->status != ERROR) a->milk += MILKVALUES[a->loc] / cowcount[a->loc];
-		update_bcb_vis(NUMAGENTS, agents, rnum);
+		//update_bcb_vis(NUMAGENTS, agents, rnum);
 	}
 
 	tell_all("ENDGAME", -1);
@@ -257,7 +257,7 @@ int main(int argc, char** argv)
 
 	for (i = 0, a = agents; i < NUMAGENTS; ++i, ++a)
 		if (a->milk == maxmilk && a->status == RUNNING)
-			printf("Player #%u (%s) wins!\n", i, a->name);
+			printf("WINNER :: %s\n", a->name);
 
 	cleanup_bots();
 	return 0;
