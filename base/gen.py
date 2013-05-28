@@ -87,7 +87,7 @@ win_dict = {}
 for x in xrange(0, int(sys.argv[1])):
     gen()
     output =  execAndReadStdout(PROC_NAME)
-    print "finished running round " + str(x+1) + "."
+    print "* finished running game " + str(x+1) + "."
     winner = run_regex(output.split('\n')[-1])
     if not winner in win_dict:
         win_dict[winner] = 0
