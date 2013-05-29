@@ -1,1 +1,1 @@
-/Users/tonynater/Tony/Computer/git/USACO/Pandemoonium/client/mm-client.h
+/home/tonynater/Pandemoonium/client/mm-client.h

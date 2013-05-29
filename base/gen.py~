@@ -9,7 +9,7 @@ PROC_NAME = ["./mm-null", "test.dat"]
 
 PLAYERS = [
     "../bots/Random/Random",
-    #"../bots/Follower/Follower",
+    "../bots/Follower/Follower",
     "../bots/Probability/Probability",
     "../bots/Greedy/Greedy",
     "../bots/MyAwesomeBot/MyAwesomeBot",

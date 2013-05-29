@@ -3,9 +3,9 @@ CFLAGS=-g
 
 all: MyAwesomeBot
 
-mm-client.o: mm-client.cpp mm-client.h
+mm-client.o: mm-client.c mm-client.h
 
-MyAwesomeBot.o: MyAwesomeBot.c mm-client.h
+MyAwesomeBot.o: MyAwesomeBot.cpp mm-client.h
 MyAwesomeBot: mm-client.o MyAwesomeBot.o
 	${CC} ${CFLAGS} -o $@ $^
 
